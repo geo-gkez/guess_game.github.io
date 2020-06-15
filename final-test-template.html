@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- 1. Δίνεται αρχείο final-test-template.html να γίνουν οι εξής αλλαγές:
+ * ο τίτλος να είναι "μάντεψε έναν αριθμό"
+ * το μέγεθος του text (κουτί εισαγωγής αριθμού) να είναι 5 χαρακτήρες
+ * να συνδεθεί η σελίδα με τα εξωτερικά αρχεία final-test-style.css και 
+ final-test-script.js τα οποία δίδονται και στα οποία θα πρέπει να γίνουν 
+ αλλαγές όπως ορίζεται στα αρχεία αυτά.
+ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="final-test-style.css">
+<script src="final-test-script.js" defer></script>
+</head>
+<body>
+    <header>Game: guess the number</header> <br>
+
+    <section id="instructions">
+         We have chosen a random number between 1 and 100. Try to guess him in 10 attempts at most.
+         Every time we tell you if the number you guessed is bigger or smaller than the right number
+    </section>
+    <section id="guess">
+        <label for="new-guess">Guess: </label>
+        <input type="text" name="new-guess" id="new-guess" maxlength=5 >
+        <button id="check"> Check </button>
+
+    </section>
+    <section>
+        <div id="message">  </div>
+        <div id="low-high"></div>
+        <p id="tries" hidden>Tries: <span id="prev-guess"></span> </p>
+    <br>
+    <br>
+    <br>
+        <button id= "restart" hidden> Play again </button>
+    </section>    
+</body>
+</html>
