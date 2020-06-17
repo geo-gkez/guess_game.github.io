@@ -1,4 +1,4 @@
-// Τα ερωτήματα 2 έως 7 θα απαντηθούν στο αρχείο αυτό
+
 
 const newGuess = document.querySelector("#new-guess");
 const message = document.querySelector("#message");
@@ -97,7 +97,7 @@ if("win"===processGuess(newValue)){
 }
 
 function processGuess(newValue){
-
+ 
 
  let theGuessInt=parseInt(theGuess);
 console.log("the guess",theGuessInt);
@@ -161,7 +161,6 @@ if(previousGuesses.length>9){
 
 function restart(){
 
-'restart' και επανεκινεί τη διαδικασία */
 
 location.reload(); 
 }
